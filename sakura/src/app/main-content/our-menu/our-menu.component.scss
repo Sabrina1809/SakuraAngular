@@ -1,0 +1,51 @@
+.h3 {
+    font-family: 'Economica';
+    font-weight: bold;
+    font-size: 56px;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+
+
+section {
+    background-image: url(./../../../assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+    background-size: cover;
+    padding: 60px 0;
+    h2 {
+        text-align: center;
+    }
+    & .menu {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+            max-width: 300px;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+        }
+        & .menu-desc {
+
+            table {
+                font-weight: bold;
+                font-size: 32px;
+                color: gray;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                text-transform: uppercase;
+                & .menu-desc-choice-line td:first-child {
+                    padding-right: 250px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+}
