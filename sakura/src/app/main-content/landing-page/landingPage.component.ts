@@ -5,7 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     selector: 'app-landingPage',
     standalone: true, 
     imports: [NavbarComponent],
-    template: `<section>
+    template: `<section id="homeScreen">
                     <div>
                         <app-navbar></app-navbar>
                     </div>

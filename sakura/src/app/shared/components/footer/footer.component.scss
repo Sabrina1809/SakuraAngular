@@ -5,8 +5,17 @@ footer {
     justify-content: space-between;
     background-color: black;
     padding: 0 5%;
+    color: white;
     & img {
         height: 44px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            cursor: pointer;
+            text-shadow: 0 0 2px white;
+        }
     }
     .social > a > img {
         height: 40px;
@@ -18,5 +27,3 @@ footer {
         }
     }
 }
-
-
