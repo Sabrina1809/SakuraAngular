@@ -1,3 +1,8 @@
+@mixin borderStyling($bStyle) {
+    border: 2px $bStyle white;
+    border-radius: 10px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -9,7 +14,8 @@ nav {
     margin: 30px auto 0 auto;
     & img {
         width: 64px;
-        height: 64px
+        height: 64px;
+        @include borderStyling(solid);
     }
     div {
         display: flex;
@@ -23,10 +29,9 @@ nav {
             }
         }
         & .phone_btn {
-            padding: 10px;
             background-color: brown;
-            border: 2px solid white;
-            border-radius: 10px;
+            padding: 10px;
+            @include borderStyling(dotted);
             & img {
                 width: 32px;
                 height: 32px;
